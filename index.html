@@ -22,7 +22,9 @@
         var draw = canvas.getContext('2d');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
+        
+        draw.globalCompositeOperation = "difference";
+        
         for (var j = 0 ; j < 3; j ++){
           var off = 5;
           draw.translate(Math.random()*off-off/2,Math.random()*off-off/2);
