@@ -23,7 +23,7 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
-        draw.globalCompositeOperation = "difference";
+        draw.globalCompositeOperation = Math.random() * 2 >= 1 ? "difference" : "color";
         
         for (var j = 0 ; j < 3; j ++){
           var off = 5;
